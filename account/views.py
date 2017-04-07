@@ -13,7 +13,7 @@ def user_login(request):
 
     if request.method == 'POST':
 
-        form = LoginForm()
+        form = LoginForm(request.POST)
 
         if form.is_valid():
 
