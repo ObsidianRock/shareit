@@ -6,3 +6,5 @@ __pycache__
 
 shareit/settings.py
 db.sqlite3
+
+media
