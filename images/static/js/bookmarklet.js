@@ -39,9 +39,11 @@
       // hide bookmarklet
       jQuery('#bookmarklet').hide();
       // open new window to submit the image
-      window.open(site_url +'images/create/?url=' + encodeURIComponent(selected_image)
-                  + '&title=' + encodeURIComponent(jQuery('title').text()),
-                  '_blank');
+      var url_r = site_url +'images/create/?url=' + encodeURIComponent(selected_image)
+                  + '&title=' + encodeURIComponent(jQuery('title').text())
+
+
+      window.open(url_r, '_blank');
     });
 
   };
